@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+$Font: 'Lexend Deca', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: $Font;
+
+  main {
+    background: #093545;
+    height: 100vh;
+    color: #fff;
+
+    section.title {
+      //   width: 500px;
+      display: none;
+      margin: auto;
+      padding: 120px 0;
+
+      text-align: center;
+
+      form {
+        ::placeholder {
+          color: #fff;
+        }
+
+        .username {
+          margin: 20px 0;
+          input[type='text'] {
+            width: 300px;
+            outline: none;
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: none;
+            background: #224957;
+            color: #fff;
+          }
+        }
+        .password {
+          input[type='password'] {
+            outline: none;
+            width: 300px;
+            font-size: 14px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            background: #224957;
+            color: #fff;
+          }
+        }
+
+        .check {
+          margin: 20px 0;
+
+          input[type='checkbox'] {
+            width: 1em;
+            height: 1em;
+            accent-color: #20df7f;
+          }
+
+          a {
+            color: #20df7f;
+            text-decoration: none;
+          }
+          a:hover {
+            color: blue;
+          }
+        }
+
+        button {
+          all: unset;
+          background: #20df7f;
+          padding: 8px;
+          border-radius: 5px;
+          width: 280px;
+          cursor: pointer;
+        }
+        button:hover {
+          color: #000;
+        }
+      }
+
+      .register {
+        margin: 20px 0;
+        a {
+          color: #20df7f;
+          text-decoration: none;
+        }
+        a:hover {
+          color: blue;
+        }
+      }
+    }
+  }
+}

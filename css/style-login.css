@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+* main {
+  background: #093545;
+  height: 100vh;
+  color: #fff;
+}
+
+* main section.title {
+  display: none;
+  margin: auto;
+  padding: 120px 0;
+  text-align: center;
+}
+
+* main section.title form ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+* main section.title form :-ms-input-placeholder {
+  color: #fff;
+}
+
+* main section.title form ::-ms-input-placeholder {
+  color: #fff;
+}
+
+* main section.title form ::placeholder {
+  color: #fff;
+}
+
+* main section.title form .username {
+  margin: 20px 0;
+}
+
+* main section.title form .username input[type='text'] {
+  width: 300px;
+  outline: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background: #224957;
+  color: #fff;
+}
+
+* main section.title form .password input[type='password'] {
+  outline: none;
+  width: 300px;
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  background: #224957;
+  color: #fff;
+}
+
+* main section.title form .check {
+  margin: 20px 0;
+}
+
+* main section.title form .check input[type='checkbox'] {
+  width: 1em;
+  height: 1em;
+  accent-color: #20df7f;
+}
+
+* main section.title form .check a {
+  color: #20df7f;
+  text-decoration: none;
+}
+
+* main section.title form .check a:hover {
+  color: blue;
+}
+
+* main section.title form button {
+  all: unset;
+  background: #20df7f;
+  padding: 8px;
+  border-radius: 5px;
+  width: 280px;
+  cursor: pointer;
+}
+
+* main section.title form button:hover {
+  color: #000;
+}
+
+* main section.title .register {
+  margin: 20px 0;
+}
+
+* main section.title .register a {
+  color: #20df7f;
+  text-decoration: none;
+}
+
+* main section.title .register a:hover {
+  color: blue;
+}

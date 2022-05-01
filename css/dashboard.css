@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  font-family: "Lexend Deca", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+* nav .container-fluid a.navbar-brand {
+  font-size: 29px;
+}
+
+* nav .container-fluid ul li {
+  color: #fff;
+}
+
+* main {
+  color: #1a1a1a;
+}
+
+* main section#profile .container-fluid button.banner {
+  background: linear-gradient(99.99deg, #b936f5 -21.45%, #c64c85 100%, #f1005b 100%);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+* main section#profile .container-fluid button.explore {
+  cursor: pointer;
+}
+
+* main section#kontak .container-fluid .background {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-42.59%, #aa14f0), color-stop(-42.59%, rgba(0, 0, 0, 0)), color-stop(-42.58%, #aa14f0), color-stop(4.35%, rgba(170, 20, 240, 0.18)), color-stop(99.99%, rgba(151, 60, 68, 0.055)), to(rgba(185, 54, 245, 0)));
+  background: linear-gradient(180deg, #aa14f0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #aa14f0 -42.58%, rgba(170, 20, 240, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(185, 54, 245, 0) 100%);
+  padding: 20px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  nav .container-fluid {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  nav {
+    z-index: 1;
+  }
+  nav .container-fluid {
+    padding: 0 30px;
+  }
+}
