@@ -7,20 +7,21 @@ sessionStorage.setItem(
 
 document.querySelector('#push').onclick = function () {
   if (document.querySelector('#newtask input').value.length == 0) {
-    Swal.fire({
-      icon: 'error',
-      title: 'Kuntul!!!',
-      text: 'Data tidak boleh kosong',
-      background: 'white',
-    });
+    // Swal.fire({
+    //   icon: 'error',
+    //   title: 'Kuntul!!!',
+    //   text: 'Data tidak boleh kosong',
+    //   background: 'white',
+    // });
+    console.log('errrorr');
   } else {
     document.querySelector('#tasks').innerHTML += `
-            <div class="task">
-                <span id="taskname">
+            <div class="task d-flex my-2">
+                <span id="taskname" class="form-control me-2">
                     ${document.querySelector('#newtask input').value}
                 </span>
-                <button class="delete bg-light">
-                    <i class="far fa-trash-alt"></i>
+                <button class="delete btn ms-2">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
                 </button>
             </div>
         `;
@@ -33,4 +34,3 @@ document.querySelector('#push').onclick = function () {
     }
   }
 };
-

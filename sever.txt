@@ -1,0 +1,16 @@
+ssh -i C:\Users\MadunIsthebest/.ssh/ngademin_tania root@tania.ngadem.in -p 10188
+
+cd fundamental-js
+
+npm run start
+
+fetch('https://tania.ngadem.in/login', {
+    method: 'POST',
+    body: JSON.stringify({
+      username: 'admin',
+      password: 'admin',
+    }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });

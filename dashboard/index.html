@@ -16,8 +16,8 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid px-4">
-        <a class="navbar-brand" href="#">Mocha</a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Mocha</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -32,30 +32,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#profile">Profile</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#todolist">About</a>
+              <a class="nav-link" href="#company">Company</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kontak">Contact</a>
+              <a class="nav-link" href="#todolist">Features</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="../FormLogin/index.html">Logout</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
     </nav>
 
     <main>
-      <section id="profile">
-        <div class="container-fluid row">
-          <div class="col-12 col-sm-6 d-flex align-items-center">
+      <section id="home">
+        <div class="container-fluid row banner1 py-4 m-0">
+          <div class="col-12 col-sm-8 d-flex align-items-center">
             <div>
-              <h1>Let’s Explore</h1>
-              <h1>Three-Dimensional</h1>
-              <h1>visual</h1>
+              <h2>Let’s Explore Three-Dimensional visual</h2>
               <p>
                 With virtual technology you can see the digital world feel more real and you can play the game
                 with a new style.
@@ -67,30 +65,134 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 text-center d-none d-sm-block">
-            <img src="../images/banner.png" alt="banner" />
+          <div class="col-12 col-sm-4 text-center d-none d-sm-block">
+            <img src="../images/banner.png" alt="banner" width="100%" />
+          </div>
+        </div>
+
+        <div class="container-fluid row mt-4 banner2 m-0">
+          <div class="col-12 col-sm-6 row">
+            <div class="col-5">
+              <img src="/images/banner1.png" alt="banner1" width="100%" />
+            </div>
+            <div class="col-7 mt-5">
+              <img src="/images/banner2.png" alt="banner2" width="80%" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 d-block d-sm-flex align-items-center pt-4">
+            <div>
+              <h2>New Experience In Playing Game</h2>
+              <p>
+                You can try playing the game with a new style and of course a more real feel, like you are the
+                main character in your game and adventure in this new digital world.
+              </p>
+              <button class="banner">Get it Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="company">
+        <div class="container-fluid row m-0">
+          <div class="col-12">
+            <h1 class="text-center">Mixed Reality Headsets</h1>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="py-3 animasi">
+              <img src="/images/company.png" alt="" width="100%" />
+              <h6>Metaverse</h6>
+              <p>A Network of 3D virtual worlds focused on social connection.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="py-3 animasi">
+              <img src="/images/company1.png" alt="" width="100%" />
+              <h6>AIoT</h6>
+              <p>AI and IoT are both emerging innovative technologies with a lot of potentials.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="py-3 animasi">
+              <img src="/images/company2.png" alt="" width="100%" />
+              <h6>HoloLens</h6>
+              <p>
+                HoloLens display information, blend with the real world , or even simulate a virtual world.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid row m-0">
+          <div class="col-12 col-sm-4">
+            <div class="py-3 animasi">
+              <img src="/images/company.png" alt="" width="100%" />
+              <h6>Metaverse</h6>
+              <p>A Network of 3D virtual worlds focused on social connection.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="py-3 animasi">
+              <img src="/images/company1.png" alt="" width="100%" />
+              <h6>AIoT</h6>
+              <p>AI and IoT are both emerging innovative technologies with a lot of potentials.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="py-3 animasi">
+              <img src="/images/company2.png" alt="" width="100%" />
+              <h6>HoloLens</h6>
+              <p>
+                HoloLens display information, blend with the real world , or even simulate a virtual world.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="todolist">
-        <div class="container">
-          <div id="newtask">
-            <input type="text" placeholder="awokawokawok" />
-            <button id="push">Add</button>
-          </div>
-          <div id="tasks"></div>
-        </div>
-      </section>
-
-      <section id="kontak" class="mt-5">
-        <div class="container-fluid">
-          <div class="container-fluid border background">
+        <div class="container-fluid row m-0">
+          <div class="col-12">
+            <h1 class="text-center mb-4">Todo List</h1>
+            <div id="newtask" class="d-flex">
+              <input type="text" placeholder="Isi lah cok" class="form-control me-2" />
+              <button id="push" class="add btn ms-2">Add</button>
+            </div>
+            <div id="tasks"></div>
           </div>
         </div>
       </section>
     </main>
 
+    <footer class="text-center social">
+      <h1>Social Media</h1>
+      <div class="d-block d-sm-flex justify-content-center">
+        <a href="https://web.facebook.com/profile.php?id=100066954433470" target="_blank">
+          <div class="fb rounded-circle">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/ra.maaa7374/" target="_blank">
+          <div class="ig rounded-circle">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+        </a>
+        <a href="https://wa.me/083878857156" target="_blank">
+          <div class="wa rounded-circle">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </div>
+        </a>
+      </div>
+      <p class="mt-3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus laudantium eum veniam accusantium
+        maiores beatae dignissimos earum a modi rem?
+      </p>
+    </footer>
+
+    <footer class="text-center fix">
+      <h6>copyright &copy;Madunnnn</h6>
+    </footer>
+
+    <script src="https://use.fontawesome.com/84aec2d61c.js"></script>
     <script src="../js/cdnBootstrap.js"></script>
     <script src="./script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>

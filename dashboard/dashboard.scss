@@ -4,28 +4,66 @@ $Font: 'Lexend Deca', sans-serif;
 
 * {
   font-family: $Font;
-  background: #000;
   color: #fff;
 
   body {
+    background: #000;
+    // margin-bottom: 230px;
   }
 
   nav {
+    background: linear-gradient(
+      99.05deg,
+      #bc3cd8 0.07%,
+      #c54b8c 106.32%
+    ) !important;
+    top: 0;
+    position: sticky !important;
+
     .container-fluid {
+      padding: 0 40px;
+
       a.navbar-brand {
         font-size: 29px;
       }
       ul li {
         color: #fff;
       }
+
+      // .dropdown {
+      //   button {
+      //     outline: none;
+      //     border: 0 !important;
+      //   }
+      //   ul.dropdown-menu {
+      //     li {
+      //       margin: 10px 0;
+      //       width: 00px;
+      //     }
+      //     li:hover {
+      //       background: #eee;
+      //     }
+      //     li a:hover {
+      //       color: #000;
+      //     }
+      //     li a {
+      //       color: #fff;
+      //       text-decoration: none;
+      //     }
+      //   }
+      // }
     }
   }
 
   main {
     color: #1a1a1a;
+    margin-bottom: 50vh;
 
-    section#profile {
-      .container-fluid {
+    section#home {
+      .container-fluid.banner1 {
+        p {
+          font-size: 15px;
+        }
         button.banner {
           background: linear-gradient(
             99.99deg,
@@ -36,51 +74,128 @@ $Font: 'Lexend Deca', sans-serif;
           padding: 10px 15px;
           border-radius: 5px;
           cursor: pointer;
-          font-size: 14px;
+          font-size: 16px;
+          outline: none;
         }
         button.explore {
           cursor: pointer;
+          font-size: 16px;
+        }
+        button.banner:hover {
+          color: #000;
+        }
+        button.explore:hover {
+          color: #b936f5;
+        }
+      }
+
+      .container-fluid.banner2 {
+        p {
+          font-size: 15px;
+        }
+        button.banner {
+          background: linear-gradient(
+            99.99deg,
+            #b936f5 -21.45%,
+            #c64c85 100%,
+            #f1005b 100%
+          );
+          padding: 10px 15px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          outline: none;
+        }
+        button.banner:hover {
+          color: #000;
+        }
+      }
+    }
+
+    section#company {
+      padding-top: 50px;
+      .animasi {
+        cursor: pointer;
+        img:hover {
+          padding: 50px;
+          transition: 2s;
         }
       }
     }
 
     section#todolist {
-    }
+      button.add {
+        background: linear-gradient(
+          99.99deg,
+          #b936f5 -21.45%,
+          #c64c85 100%,
+          #f1005b 100%
+        );
+        color: #fff;
+      }
+      button.add:hover {
+        color: #000;
+      }
 
-    section#kontak {
-      .container-fluid {
-        .background {
-          background: linear-gradient(
-            180deg,
-            #aa14f0 -42.59%,
-            rgba(0, 0, 0, 0) -42.59%,
-            #aa14f0 -42.58%,
-            rgba(170, 20, 240, 0.18) 4.35%,
-            rgba(151, 60, 68, 0.055) 99.99%,
-            rgba(185, 54, 245, 0) 100%
-          );
-          padding: 20px;
-          z-index: 1;
-        }
+      #tasks {
+        margin: 10px 0;
+      }
+
+      button.delete {
+        background: linear-gradient(
+          99.99deg,
+          #b936f5 -21.45%,
+          #c64c85 100%,
+          #f1005b 100%
+        );
+        color: #fff;
       }
     }
+  }
+
+  footer.social {
+    padding: 100px 0 50px 0;
+
+    .ig,
+    .fb,
+    .wa {
+      font-size: 50px;
+      border: 5px solid #fff;
+      height: 120px;
+      width: 120px;
+      padding: 15px 0 0 0;
+      margin: 20px 30px;
+    }
+
+    .ig :hover {
+      color: red;
+    }
+    .fb :hover {
+      color: red;
+    }
+    .wa :hover {
+      color: red;
+    }
+  }
+
+  footer.fix {
+    background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+    padding: 10px;
   }
 }
 
 // break points
-@media only screen and (max-width: 576px) {
-  nav {
-    .container-fluid {
-      padding: 0;
-    }
-  }
-}
+// @media only screen and (max-width: 576px) {
+//   * {
+//     outline: none;
 
-@media only screen and (max-width: 576px) {
-  nav {
-    z-index: 1;
-    .container-fluid {
-      padding: 0 30px;
-    }
-  }
-}
+//     section#home {
+//       .container-fluid.banner1 {
+//         button.banner {
+//           outline: none;
+//         }
+//       }
+//     }
+//   }
+
+// }

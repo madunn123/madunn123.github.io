@@ -11,8 +11,8 @@ function regist(e) {
     method: 'POST',
     url: 'https://tania.ngadem.in/register',
     data: JSON.stringify({
-      username,
-      password,
+      username: 'ramadhan',
+      password: '123456',
     }),
     contentType: 'application/json; charset=utf-8',
     success: result => {
