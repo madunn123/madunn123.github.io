@@ -7,10 +7,17 @@ $Font: 'Lexend Deca', sans-serif;
   margin: 0;
   font-family: $Font;
 
+  body {
+    background: #000;
+  }
+  
   main {
-    background: #093545;
-    height: 100vh;
     color: #fff;
+
+    section button.view {
+      background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+      color: #fff;
+    }
 
     section.title {
       //   width: 500px;
@@ -22,7 +29,7 @@ $Font: 'Lexend Deca', sans-serif;
 
       form {
         ::placeholder {
-          color: #fff;
+          color: #000;
         }
 
         .username {
@@ -34,8 +41,8 @@ $Font: 'Lexend Deca', sans-serif;
             font-size: 14px;
             border-radius: 5px;
             border: none;
-            background: #224957;
-            color: #fff;
+            background: #eee;
+            color: #BC3CD8;
           }
         }
         .password {
@@ -46,8 +53,8 @@ $Font: 'Lexend Deca', sans-serif;
             padding: 8px 15px;
             border-radius: 5px;
             border: none;
-            background: #224957;
-            color: #fff;
+            color: #BC3CD8;
+            background: #eee;
           }
         }
 
@@ -61,7 +68,7 @@ $Font: 'Lexend Deca', sans-serif;
           }
 
           a {
-            color: #20df7f;
+            color: #c824ec;
             text-decoration: none;
           }
           a:hover {
@@ -71,7 +78,7 @@ $Font: 'Lexend Deca', sans-serif;
 
         button {
           all: unset;
-          background: #20df7f;
+          background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
           padding: 8px;
           border-radius: 5px;
           width: 280px;
@@ -85,7 +92,7 @@ $Font: 'Lexend Deca', sans-serif;
       .register {
         margin: 20px 0;
         a {
-          color: #20df7f;
+          color: #c824ec;
           text-decoration: none;
         }
         a:hover {
