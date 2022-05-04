@@ -50,12 +50,13 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  outline: none;
+  color: #fff;
 }
 
 * main section#home .container-fluid.banner1 button.explore {
   cursor: pointer;
   font-size: 16px;
+  color: #fff;
 }
 
 * main section#home .container-fluid.banner1 button.banner:hover {
@@ -64,6 +65,7 @@
 
 * main section#home .container-fluid.banner1 button.explore:hover {
   color: #b936f5;
+  outline: none !important;
 }
 
 * main section#home .container-fluid.banner2 p {
@@ -77,6 +79,7 @@
   cursor: pointer;
   font-size: 16px;
   outline: none;
+  color: #fff;
 }
 
 * main section#home .container-fluid.banner2 button.banner:hover {
@@ -145,4 +148,23 @@
 * footer.fix {
   background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
   padding: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  nav .container-fluid {
+    padding: 0 20px;
+  }
+  footer#social {
+    padding: 100px 30px;
+  }
+  footer#social .ig,
+  footer#social .fb,
+  footer#social .wa {
+    font-size: 40px;
+    border: 5px solid #fff;
+    height: 100px;
+    width: 100px;
+    padding: 15px 0 0 0;
+    margin: 20px 10px;
+  }
 }
