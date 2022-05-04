@@ -21,7 +21,7 @@ $('#validasi').submit(function (e) {
         }).then(result => {
           /* Read more about isConfirmed, isDenied below */
           if (result.isConfirmed) {
-            window.location.href = '../dashboard/index.html';
+            window.location.href = '../index.html';
           }
         });
       } else {
