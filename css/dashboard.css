@@ -146,19 +146,3 @@
   background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
   padding: 10px;
 }
-
-@media only screen and (max-width: 576px) {
-  footer#social {
-    padding: 100px 30px;
-  }
-  footer#social .ig,
-  footer#social .fb,
-  footer#social .wa {
-    font-size: 40px;
-    border: 5px solid #fff;
-    height: 100px;
-    width: 100px;
-    padding: 15px 0 0 0;
-    margin: 20px 10px;
-  }
-}
